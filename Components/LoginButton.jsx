@@ -1,10 +1,11 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-
+import {useNavigation} from "@react-navigation/native"
 const LoginButton = () => {
+  const navigation = useNavigation()
   return (
     <View style={styles.container}>
-        <Pressable onPress={()=>{alert('Hello there!')}}>
+        <Pressable onPress={()=>{navigation.navigate("Home")}}>
         <Text style={styles.loginButtonText}>Log in</Text>
         </Pressable>
       
