@@ -14,10 +14,10 @@ const [email, setEmail] = useState('')
     <View style={styles.container}>
       <TextInput style={styles.textInputEdit} placeholder= {props.name1} value={name} onChangeText={setName}/>
       <TextInput style={styles.textInputEdit} placeholder={props.name2} value={email} onChange={setEmail}/>
-
+      <TextInput placeholder={props.name3} secureTextEntry={true} style={styles.textInputEdit}/>
       <View style={styles.containerForButton}>
       <Pressable onPress={()=>{
-          navigation.navigate("Home", {name, email})
+          navigation.navigate("Home")
 
           }
           }>

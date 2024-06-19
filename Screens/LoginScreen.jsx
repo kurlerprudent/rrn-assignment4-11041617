@@ -13,7 +13,7 @@ const LoginScreen = () => {
     <View style={styles.container}>
         <ScrollView>
         <LoginFirstSection/>
-      <LoginSecondSection name1='Name' name2='Email' />
+      <LoginSecondSection name1='Name' name2='Email' name3='Password' />
     
       <LoginFourthSection/>
       <LoginFifthSection/>
